@@ -1,0 +1,185 @@
+baseURL: at-dx.github.io
+languageCode: en-us
+title: AusculTech Dx
+theme: hugo-fresh
+googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
+# Disables warnings
+disableKinds:
+- taxonomy
+- taxonomyTerm
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+params:
+  # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
+  openGraph: true
+  # Used as meta data; describe your site to make Google Bots happy 
+  description: medical device company using FDA cleared software and hardware for AI auscultation and intelligent classification
+  navbarlogo:
+  # Logo (from static/images/logos/___)
+    image: logos/auscultech-logo.svg
+    #image-size: is-large
+    link: /
+  font:
+    name: "Open Sans"
+    sizes: [600,800]
+  is-large: true
+  hero:
+    # Main hero title
+    title: Hear. Understand.
+    # Hero subtitle (optional)
+    subtitle: Our product, StethAid™, uses intelligent algorithms to bring pediatric cardiopulmonary expertise into primary care offices and homes.
+    # Button text
+    buttontext: Explore
+    # Where the main hero button links to
+    # url: /tech/tech
+    buttonlink: "tech/tech"
+    # Hero image (from static/images/___)
+    image: logos/device.png #illustrations/worker.svg
+    # Footer logos (from static/images/logos/clients/___.svg)
+    # clientlogos:
+    # - systek
+    # - tribe
+    # - kromo
+    # - infinite
+    # - gutwork
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+  - title: Technology
+    url: /tech/tech
+  - title: About Us
+    sublinks:
+    - title: Our Mission
+      url: /team/mission
+    - title: Core Team
+      url: /team/team
+  - title: Media
+    sublinks: 
+    - title: News
+      url: /news/news
+    - title: Publications
+      url: /pubs/pubs
+  - title: Careers
+    url: /careers/careers
+  - title: Contact
+    url: /contact/contact
+  - title: Log in
+    url: http://13.82.61.156:9089/
+    button: true
+    # buttonLink: https://www.google.com
+  section1:
+    title: News
+    # subtitle: More news ...
+    tiles:
+    - title: AusculTech Dx receives STTR Phase I award
+      icon: mouse-globe
+      text: AusculTech Dx received its latest STTR Phase I award from the National Institutes of Health (NIH). (June 2020)
+      url: /news/news
+      buttonText: More
+    - title: ACME-POCT selects AusculTech Dx for a seed grant
+      icon: laptop-cloud
+      text: A seed grant from Emory/Georgia Tech/Children’s based Atlanta Center for Microsystems Engineered Point-of-Care Technologies (ACME POCT) is enabling AusculTech Dx to research and develop next-generation StethAid™ technology. (January 2020)
+      url: /news/news
+      # button: false
+      buttonText: More
+    - title: AusculTech DX wins WBJ 2017 Innovation Award
+      icon: plug-cloud
+      text: The Washington Business Journal’s annual Innovation Awards honor Greater Washington companies on the cutting edge in technology. AusculTech DX was one of the 15 honorees selected. (September 2020)
+      url: /news/news
+      buttonText: More
+  section2:
+    title: Benefits
+    subtitle: Transforming digital auscultation through AI
+    features:
+    - title: Cost-Saving Technology
+      text: As a decision support system, StethAid™ helps reduces unnecessary referrals to specialists, avoiding the anxiety, inconvenience, and cost associated with them. Health systems like HMOs and MCOs looking for value-based medicine can benefit from AusculTech's cost-saving technology. 
+      # Icon (from /images/illustrations/icons/___.svg)
+      icon: laptop-globe
+    - title: Powerful AI Algorithms
+      text: StethAid™ delivers instant murmur classification without needing to be connected to the internet. AI diagnostics of many more heart and lung conditions are being added. Furthermore, recording environments can be noisy; our adaptive noise cancellation eliminates unwanted ambient sounds.
+      icon: doc-sync
+    - title: Telehealth Ready
+      text: StethAid™ is a truly wireless stethoscope allowing for effortless data collection and transmission. Seeking specialist consultation or a second opinion? Easily send recordings to a specialist.
+      icon: mobile-feed
+  section3:
+    title: Digital Auscultation Platform
+    subtitle: Our digital auscultation platform allows for seamless recording, classification of heart murmurs, cloud-based storage, and sharing of heart and lung sounds
+    image: /illustrations/platform.png
+    button: false
+    buttonText: Explore
+    buttonLink: "/tech/tech"
+  section4:
+    title: In the United States, unnecessary medical visits to cardiopulmonary specialists, along with subsequent hospitalizations, result in a direct and indirect economic toll of over $50B. 
+    subtitle: StethAid™ reduces unnecessary referrals to specialists - leading to more efficient workflows for primary care providers and fewer for specialists, cost savings for insurance companies, and ultimately, better care for patients.
+    image: /illustrations/steth-icon.png
+    clients:
+    - name: NIH
+      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+      job: Accountant
+      url: https://www.google.com
+      img: 1
+    - name: John Bradley
+      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+      job: Financial Analyst
+      img: 2
+    - name: Gary Blackman
+      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+      job: HR Manager
+      img: 3
+
+  section5: true
+  footer:
+    # Logo (from /images/logos/___)
+    logo: auscultech-logo.svg
+    # Social Media Title
+    socialmediatitle: Follow Us
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    socialmedia:
+    - link: https://www.linkedin.com/company/auscultech-dx/
+      # Icons are from Font Awesome
+      icon: linkedin
+    # - link: https://dribbble.com/#
+    #   icon: dribbble
+    # - link: https://facebook.com/#
+    #   icon: facebook
+    # - link: https://twitter.com/lucperkins
+    #   icon: twitter
+    # - link: https://bitbucket.org/#
+    #   icon: bitbucket
+    bulmalogo: false
+    quicklinks:
+      column1:
+        title: "Product"
+        links:
+        - text: Discover
+          link: /tech/tech
+        - text: Privacy Policy
+          link: /privacy/privacy
+        # - text: Why choose our product?
+        #   link: /
+        # - text: Compare features
+        #   link: /
+        # - text: Our roadmap
+        #   link: /
+        # - text: AGB
+        #   link: /agb
+      # column2:
+      #   title: "Docs"
+      #   links:
+      #   - text: Get started
+      #     link: /
+      #   - text: User guides
+      #     link: /
+      #   - text: Admin guide
+      #     link: /
+      #   - text: Developers
+      #     link: /
+      # column3:
+      #   title: "Blog"
+      #   links:
+      #   - text: Latest news
+      #     link: /blog/first
+      #   - text: Tech articles
+      #     link: /blog/second
